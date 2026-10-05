@@ -1,15 +1,15 @@
 import os
 from dotenv import load_dotenv
 
-# .env file se variables load karega
 load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
+# Standard production models on OpenRouter
 PRIMARY_MODEL = "meta-llama/llama-3.1-70b-instruct"
 FALLBACK_MODELS = [
-    "mistralai/mistral-large",
-    "google/gemini-flash-1.5"
+    "mistralai/mistral-7b-instruct",
+    "google/gai-studio-models"  # Or standard router model
 ]
 
 TARGET_DAILY_COMPOUNDING = 0.06
