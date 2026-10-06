@@ -7,7 +7,7 @@ export default function App() {
   const [logs, setLogs] = useState(['[SYSTEM]: Robin Orchestrator Dashboard Initialized.']);
   const [loading, setLoading] = useState(false);
 
-  const API_BASE = "http://localhost:8000";
+  const API_BASE = "https://robin-orchestrator.onrender.com";
 
   const fetchStatus = async () => {
     try {
